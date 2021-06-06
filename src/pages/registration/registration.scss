@@ -1,0 +1,127 @@
+page-registration{
+    .regis{
+        font-size: 12px;
+        //font-style: italic;
+        font-style: bold;
+        background-color: transparent;
+        //border: 1px solid #a29a9a;
+        //padding-top: 20px;
+        padding : 20px;
+        text-align: left;
+        font-weight: 400;
+        padding-top : 20px;
+    }
+    .resbg{
+        //overflow: auto;
+        display: block;
+    }
+
+    .regisinput input[input=text]{
+   
+       margin-left: 4vh;
+       margin-right: 4vh;
+       background-color: transparent;
+       border: none;
+       
+    }
+
+    .register{
+  
+        
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(160deg, rgba(151, 5, 248, 0.438) 30%, rgba(89, 77, 248, 0.829) 70%);
+        
+    }
+
+    .regisheader{
+        font-weight : 1000;
+        font-size: 20px;
+        font-style: bold;
+        color : rgb(255, 255, 255);
+    }
+
+    .padding{
+        padding-top : 20px;
+    }
+
+    .body{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+        //margin-left: 2vh;
+        //margin-right: 2vh;
+
+    }
+    .inputs {
+        position: absolute;
+        display: block;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        color: #fff;
+        opacity: 1.0;
+        
+    }
+    .hello
+    {
+        color: #fff;
+    }
+
+    
+    ion-item {
+        background: transparent!important;
+        border: 1px solid #fff!important;
+        ion-input {
+            color: #fff;
+        }
+        ion-label {
+            color: #fff!important;
+        }
+        .item-inner {
+            border: 0!important;
+        }
+        
+    }
+    .class
+    {
+        color: #fff;
+    }
+    .text-input::-moz-placeholder {
+        color: #fff;
+        opacity: 0.5;
+      }
+      
+      .text-input:-ms-input-placeholder {
+        color: #fff;
+        opacity: 0.5;
+      }
+      
+      .text-input::-webkit-input-placeholder {
+        color: #fff;
+        opacity: 0.5;
+      }
+      .button {
+        position: absolute;
+        display: block;
+        
+        background: #fff!important;
+        border: 1px solid #fff;
+        box-shadow: 0px;
+        color: rgb(110, 94, 94)!important;
+        width: 100%;
+        height: 13%;
+    }
+    .toolbar-title-md {
+        padding: 0 12px;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #ffff;
+    }
+    .toolbar-title-md{
+        padding:0 12px;
+        font-size:2rem;
+        font-weight : 500; 
+        color: #ffff;
+        }
+}

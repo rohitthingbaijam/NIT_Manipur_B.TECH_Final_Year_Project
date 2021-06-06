@@ -1,0 +1,75 @@
+page-newarrivals {
+    
+    .image{
+        width: 150px ;
+        height: 200px;
+        margin-top: -20px;
+    }
+
+    .border{
+        //padding : 20px;
+        margin-top: 2vh;
+        background : rgba(0,0, 0, 0.5);
+        margin-left: 2vh;
+        margin-right: 2vh;
+        border-style: groove;
+        border-color: #E3DEDE;
+    }
+
+    .hr{
+        display: block;
+        height: 1px;
+        height: 0.2%;
+        border: 0;
+        border-style: solid;
+        //border-color: aqua;
+        //border-top: 0.5px solid aqua;
+       // border-bottom: 1px solid aqua;
+  
+        margin: 1em 0;
+        padding: 0; 
+    }
+
+    .vertical{
+        border-left: 6px  #E3DEDE;
+        height: 500px;
+        position: absolute;
+        left: 50%;
+        margin-left: -3px;
+        top: 0;
+    }
+
+    .font{
+        color : rgb(7, 0, 0);
+        font-family : 'Times New Roman', Times, serif ;
+       // margin-left: 8vh;
+        color:purple;
+        text-transform: uppercase;
+        margin-top: 2px;
+        
+    }
+    .font2{
+        color : rgb(7, 0, 0);
+        font-family : 'Times New Roman', Times, serif ;
+       // margin-left: 8vh;
+        font-size: 18px;
+        
+    }
+    .font1{
+        border-style: solid;
+        border-width: 0.8px;
+        border-color: purple;  
+        border-radius: 20px;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.4rem;
+    
+    }
+    .abc
+    {
+        margin-top:50px;
+    }
+    
+
+
+}

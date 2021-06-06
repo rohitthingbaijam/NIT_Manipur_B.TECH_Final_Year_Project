@@ -1,0 +1,49 @@
+page-payment {
+    .address{
+        //margin-top: 2vh;
+        margin-left: 2vh;
+        font-size: 15px;
+       // height: 0.5%;
+        //font-style : italic;
+        //margin-right: 4vh;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 300;
+        color: white;
+    }
+    
+    .hr{
+        display: block;
+        height: 1px;
+        height: 0.2%;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0; 
+    }
+
+    .textarea{
+        //padding-top: 2em;
+        margin-top: 3vh;
+    }
+
+    .padding{
+        padding-top: 10px;
+    }
+
+    .border{
+        //margin-top: 5vh;
+        padding-top: 10px ;
+        padding-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+        //background : rgba(0,0, 0, 0.5);
+        margin-left: 1vh;
+        margin-right: 1vh;
+        border-style: groove;
+        border-color: #E3DEDE;
+    }
+
+    .padding{
+        padding-top : 20px;
+    }
+}

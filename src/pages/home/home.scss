@@ -1,0 +1,110 @@
+page-home {
+  .padding {
+
+    ion-card {
+      position: relative;
+      text-align: center;
+    }
+    
+    .card-title {
+      border-style: groove;
+      border-color: rgba(0,0, 0, 0.3);
+      background : rgba(0,0, 0, 0.3);
+      position: absolute;
+      top: 50%;
+      font-size: 1.8em;
+      width: 100%;
+      font-weight: bold;
+      
+      color: #fff;
+    }
+    .card-title2 {
+     
+      
+      position: absolute;
+      top: 50%;
+      font-size: 1.5em;
+      width: 100%;
+      font-weight: bold;
+      
+      //color: #ffffff;
+      color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+    }
+    .card-title1 {
+     
+      position: absolute;
+      top: 50%;
+      font-size: 1.8em;
+      width: 100%;
+      font-weight: bold;
+      
+      color: #fff;
+    }
+    .card-title3 {
+     
+      position: absolute;
+      top: 50%;
+      font-size: 1.3em;
+      width: 100%;
+      font-weight: bold;
+      
+      color: #fff;
+    }
+    
+    
+    .card-subtitle {
+      font-size: 1.0em;
+      position: absolute;
+      top: 52%;
+      width: 100%;
+      color: #fff;
+    }
+    
+    }
+
+    .slide-zoom {
+      text-align: center;
+      display: block;
+      width: 100%;
+      height: 100%;
+  }
+
+  .button{
+    font-size: 15px;
+ 
+  }
+
+  .slide{
+    // margin-top: 1vh; 
+  }
+
+  .img{
+    position:absolute;
+  }
+
+  .ion-img {
+    display: inline-block;
+    min-width: 20px;
+    min-height: 20px;
+    background: #e7e0da;
+    contain: strict;
+}
+  .slideimage{
+    width : 100%;
+    height: 100%;
+  }
+  ion-slides {
+    display: block;
+    width: 100%;
+    height: 44%;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+  width: 100%;
+}
+}

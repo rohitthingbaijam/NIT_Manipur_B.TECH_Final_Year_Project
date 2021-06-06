@@ -1,0 +1,139 @@
+
+page-login {
+    .bg {
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(160deg, rgba(151, 5, 248, 0.438) 30%, rgba(89, 77, 248, 0.829) 70%);
+    }
+    .head {
+        position: absolute;
+        display: block;
+        color: #fff;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+    .head h1 {
+        font-size: 7vh!important;
+        font-weight: lighter!important;
+        font-family: 'Pacifico', cursive;
+    }
+    
+    
+    .inputs {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        color: #fff;
+        opacity: 1.68;
+    }
+    ion-item {
+        
+        background: transparent!important;
+        border: 1px solid #fff!important;
+
+        ion-input {
+            color: #fff;    
+        }
+        
+        
+
+    }
+    button {
+        position: absolute;
+        display: block;
+        top: 50%;
+        background: #fff!important;
+        border: 1px solid #fff;
+        box-shadow: 0px;
+        color: #9A9595!important;
+    }
+    .text-input::-moz-placeholder {
+        color: #fff
+      }
+      
+      .text-input:-ms-input-placeholder {
+        color: #fff
+      }
+      
+      .text-input::-webkit-input-placeholder {
+        color: #fff
+      }
+      .hi
+      {
+          margin-top: 14vh;
+          margin-left:13vh;
+      }
+      .a2
+      {
+        position: absolute;
+        display: block;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        color: #fff;
+        opacity: 1.68;
+
+      }
+      .a1
+      {
+        
+        background: transparent!important;
+        border: 1px solid #fff!important;
+        position: absolute;
+        display: block;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        color: #fff;
+        opacity: 1.68;
+        
+    }
+      .a
+      {
+       
+        background: transparent!important;
+        border: 1px solid #fff!important;
+      position: absolute;
+        display: block;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        color: #fff;
+        opacity: 1.68;
+       
+      
+    }
+    .a3
+      {
+        position: absolute;
+        display: block;
+        top: 68%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        color: #fff;
+        opacity: 1.68;
+      }
+      .a4
+      {
+        position: absolute;
+        display: block;
+        top: 73%;
+        left: 83%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        color: #fff;
+        opacity: 1.68; 
+      }
+      
+    
+     
+}

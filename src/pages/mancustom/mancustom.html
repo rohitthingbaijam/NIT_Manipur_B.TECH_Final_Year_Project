@@ -1,0 +1,48 @@
+<!--
+  Generated template for the MancustomPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="purpledark">
+    <ion-toolbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu" ></ion-icon>
+        </button>
+          <ion-buttons start>
+            <button ion-button icon-only color="royal" >
+              <ion-icon name="search" ></ion-icon>
+            </button>
+          </ion-buttons>
+        <ion-title >Men Custom</ion-title>
+          <ion-buttons end>
+          <button ion-button icon-only color="royal" (click)="goMyCart()">
+            <ion-icon name="cart"></ion-icon>
+          </button>
+          <ion-badge class="cart-badge">{{ cart_count }}</ion-badge>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-navbar>   
+</ion-header>
+
+<ion-content class="padding" >
+    <body >
+        <ion-card (click)="goNext2()">
+          
+          <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fdanschawbel%2Ffiles%2F2017%2F12%2Fdrdrew.jpg"
+            style="width:400px;height:200px;" />
+              <div class="card-title" >Shirts</div>
+              <div class="card-subtitle" ></div>
+         
+        </ion-card>
+        <!--<div class="fits">Find your Fit</div>-->
+        <ion-card  (click)="goNext3()">
+          <img  
+            src="https://i.dmarge.com/2017/05/david-gandy-hats.jpg"
+            style="width:400px;height:200px;"/>
+              <div class="card-title">Blazers</div>
+              <div class="card-subtitle"></div>
+        </ion-card>
+      </body>
+</ion-content>

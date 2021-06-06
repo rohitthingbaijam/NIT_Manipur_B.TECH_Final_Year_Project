@@ -1,0 +1,105 @@
+<!--
+  Generated template for the MantrousersPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="purpledark">
+    <ion-toolbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu" ></ion-icon>
+        </button>
+          <ion-buttons start>
+            <button ion-button icon-only color="royal" >
+              <ion-icon name="search" ></ion-icon>
+            </button>
+          </ion-buttons>
+        <ion-title (click)="goNexthome()">Men Blazers</ion-title>
+          <ion-buttons end>
+          <button ion-button icon-only color="royal" (click)="goMyCart()">
+            <ion-icon name="cart"></ion-icon>
+          </button>
+          <ion-badge class="cart-badge">{{ cart_count }}</ion-badge>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+    
+         
+            <img class = "img"  src="{{ data.apiImageUrl }}{{ productImage }}"/>
+            <div class="price">₹ {{price}}/- only</div>  
+            <ion-icon class="info" name="information-circle" (click)="goNext1()"></ion-icon>
+            <div class="design">Design everything</div>
+            
+          <ion-grid padding> 
+              <ion-row >
+                <ion-col col-12>
+                   <ion-list class = "list">
+                      <ion-item>
+                        <ion-label class = "label">Body type</ion-label>
+                        <ion-select [(ngModel)]="bodytype" (ionChange)="shippingMethodChange($event)">
+                            <ion-option value="bandh">Bandhgala</ion-option>
+                            <ion-option value="single">Single Button</ion-option>
+                            <ion-option value="nehru">Nehru</ion-option>
+                          </ion-select>
+                        </ion-item>
+                      </ion-list>
+                </ion-col>
+                <ion-col col-12>
+                    <ion-list>
+                       <ion-item>
+                         <ion-label>Size</ion-label>
+                         <ion-select [(ngModel)]="size">
+                             <ion-option value="36">36</ion-option>
+                             <ion-option value="38">38</ion-option>
+                             <ion-option value="40">40</ion-option>
+                             <ion-option value="42">42</ion-option>
+                             <ion-option value="44">44</ion-option>
+                             <ion-option value="46">46</ion-option>
+                             <ion-option value="48">48</ion-option>
+                             <ion-option value="50">50</ion-option>
+                           </ion-select>
+                         </ion-item>
+                       </ion-list>
+                </ion-col>
+              </ion-row>
+              <ion-row >
+                  <ion-col col-12>
+                      <ion-list>
+                         <ion-item>
+                           <ion-label>Fabric</ion-label>
+                           <ion-select [(ngModel)]="fabric" (ionChange)="shippingMethodChange($event)">
+                               <ion-option value="fabric1">Fabric 1</ion-option>
+                               <ion-option value="fabric2">Fabric 2</ion-option>
+                               <ion-option value="fabric3">Fabric 3</ion-option>
+                             </ion-select>
+                           </ion-item>
+                         </ion-list>
+                  </ion-col>
+                    <ion-col col-12>
+                        <ion-list>
+                           <ion-item>
+                             <ion-label>Sleeve</ion-label>
+                             <ion-select [(ngModel)]="sleeve" >
+                                 <ion-option value="default">-------</ion-option>
+                               </ion-select>
+                             </ion-item>
+                           </ion-list>
+                    </ion-col>
+                
+              </ion-row>
+          </ion-grid>
+          <hr class="hr">
+          
+
+          <button class="button" ion-button full large color="default" (click)="addToCart(item1)">Add to Cart</button>
+    <hr class="hr">
+    <div class="about">Estimated delivery within 7-10 working days.</div>
+    <div class="about">If product is unsatisfactory the return has to be made within 30 days.</div> 
+    <hr class="hr"> 
+         
+
+</ion-content>

@@ -1,0 +1,119 @@
+page-cart {
+    .footer{
+        color: antiquewhite;
+    }
+
+    .items{
+    //margin-top: 2vh;
+    margin-left: 2vh;
+    font-size: 18px;
+   // height: 0.5%;
+    //font-style : italic;
+    //margin-right: 4vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    color: white;
+    }
+
+    .hr{
+        display: block;
+        height: 1px;
+        height: 0.2%;
+        border: 0;
+        border-top: 1px solid #ccc;
+        margin: 1em 0;
+        padding: 0; 
+    }
+    
+    .abc1
+    {
+        
+        margin-left: 2vh;
+        font-size: 3vh;
+        
+       
+        
+        
+    
+    }
+    .abcd
+    {
+        
+
+        
+            border-color: purple;
+        
+        background-color: #fff;
+        
+    
+    }
+    .item-name
+    {
+        font-style: bold;
+        font-size:18px;
+        text-transform: uppercase;
+    }
+    /* .item-count
+    {
+        background-color: #4CAF50;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 0.8px;
+        border-color: #4CAF50;
+    
+    }
+    .item-count1
+    {
+        margin-top: 10%;
+        background-color: #4CAF50;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 0.8px;
+        border-color: #4CAF50;
+    
+    } */
+    /* .border
+    {
+        border-style: solid;
+  border-width: 0.8px;
+  border-color: #4CAF50;
+    } */
+    .item-count1{
+        color: white !important;
+        background-color: color($colors, secondary);
+        width: 20%;
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+
+    }
+    .border{
+        color: #222 !important;
+        background-color: color($colors, light);
+        width: 10%;
+        text-align: center;
+        // margin: -12% 0px 0 33px;
+        font-size: 1.5rem;
+    }
+    .item-count2{
+        color: white !important;
+        background-color: color($colors, secondary);
+        width: 20%;
+        text-align: center;
+        color: #fff;
+        font-size: 1.5rem;
+       // margin: -13% 0px 0 54px;
+    }
+    .count{
+       // border: 1px solid #222;
+        background-color: #ccc;
+        height: 17px;
+        width: 57%;
+    }
+    .plus{
+        margin: -5px 0px 0px 0;
+    }
+    
+    
+    
+}

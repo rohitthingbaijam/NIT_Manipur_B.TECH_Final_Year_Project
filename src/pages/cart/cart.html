@@ -1,0 +1,113 @@
+<ion-header>
+    <ion-navbar color="purpledark">
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>
+        <strong>My Cart</strong> 
+      </ion-title>
+     
+    </ion-navbar>
+  
+  </ion-header> 
+  
+  <ion-content class="" >
+  
+      
+    <ion-list class="abc">
+           
+                  <ion-item-divider [hidden]="!showEmptyCartMessage">
+                    <strong>Your cart is empty.</strong>
+                  </ion-item-divider>
+  
+                 
+                  
+                
+        <ion-item class="abc" *ngFor="let item of cartItems; let i = index" >
+          <ion-card>
+            
+            <ion-row class="">
+                <ion-col col-12="">
+                    
+                    <ion-row >
+                        <ion-col  col-4="">
+                            
+                            <img alt="" src="{{dataService.apiImageUrl}}{{item.image_name}}">
+                        </ion-col>
+                        <ion-col col-8="">
+                            <div class="item-name" text-wrap="">
+                                 
+                                {{item.name}}
+                            </div>
+                            <p class="item-detail" text-wrap="">Body Type:{{item.bodytype}}</p>
+                            <p class="item-detail" text-wrap="">Sleeve: {{item.sleeve}}</p>
+                            <p class="item-detail" text-wrap="">Fabric: {{item.fabric}}</p>
+                           
+                            <p class="item-detail" text-wrap="">Size: {{item.size}}</p>
+                         <span>
+                                <p class="item-detail">Price:
+                                    <span class="item-price currency"> {{item.price}}</span>
+                                </p>
+                            </span>
+                            
+  
+                            <ion-row class="counter ">
+                                
+                                <ion-col col-10="">
+  
+                                   
+                                      <ion-row class="count">
+                                        <ion-col class="item-count1" (click)="changeQty(item,i, -1)"><div class="plus">-</div></ion-col>
+                                        <ion-col class="border"><div class="plus">{{item.qty}}</div>  </ion-col>
+                                        <ion-col class="item-count2" (click)="changeQty(item,i, 1)"><div class="plus">+</div></ion-col>
+                                      </ion-row>
+                                       
+                                    
+                                </ion-col>
+                                <ion-col  col-2="">
+                                    <ion-icon color="danger" name="trash" role="img" (click)="removeFromCart(item, i)" ></ion-icon>
+                                </ion-col>
+                              
+                            </ion-row>
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+            </ion-row>
+          </ion-card>
+           
+       </ion-item>
+    </ion-list>
+  <div [hidden]="showEmptyCartMessage" >
+    <ion-row class="price-details ">
+        <ion-col class="" col-12="">
+          <!--   <p class="bill-detail">Price Subtotal
+                <span>Rs 18.00</span>
+            </p>
+           
+  
+            <p class="bill-detail">Total VAT(10%)
+                <span>Rs1.8</span>
+            </p>
+            <p class="bill-detail">Other Taxes
+                <span> 0%</span>
+            </p> -->
+           
+            <!---->
+            <div class="abcd">
+               
+                <div>
+                    <strong class="abc1" >CART TOTAL &nbsp;
+                  ₹ {{ overalltotal}}/- only </strong> 
+                </div>
+                
+            </div>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button full large color="primary" (click)="pay()" >Continue</button>
+      </ion-col>
+    </ion-row>
+  </div>
+  </ion-content>
+  

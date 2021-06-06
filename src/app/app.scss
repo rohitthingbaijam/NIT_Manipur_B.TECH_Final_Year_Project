@@ -1,0 +1,35 @@
+
+.sidemenu{
+    color: rgba(212, 41, 56, 0.979);
+}
+
+.cart-badge{
+    margin-left: -18px !important;
+    color: #222 !important;
+    background-color: #fff !important;
+    /* padding: 8px 12px !important; */
+    border-radius: 15px !important;
+    /* padding-right: 11px !important; */
+    /* float: left; */
+  }
+  .abcd{
+      background-color: #e0b6db;
+  }
+  .toolbar-md-purple .toolbar-background-md {
+    background: rgb(183, 82, 250);
+}
+ion-toast {
+    left: 6px;
+    top: 0;
+    position: absolute;
+    z-index: 1000;
+    display: block;
+    width: 90%;
+    height: 100%;
+    pointer-events: none;
+    contain: strict;
+}
+.toast-md .toast-wrapper.toast-middle {
+    opacity: .01;
+    border-radius: 10px;
+}

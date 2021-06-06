@@ -1,0 +1,65 @@
+<ion-header >
+    <ion-navbar color=purpledark>
+        <ion-toolbar>
+            <button ion-button menuToggle>
+                <ion-icon name="menu" ></ion-icon>
+              </button>
+            <ion-buttons start>
+              <button ion-button icon-only color="royal" >
+                <ion-icon name="search" ></ion-icon>
+                </button>
+            </ion-buttons>
+            <ion-title class="phi">Phisakhol</ion-title>
+            <ion-buttons end>
+              <button ion-button icon-only color="royal" (click)="goMyCart()">
+                  <ion-icon name="cart"></ion-icon>   
+              </button>
+              <ion-badge class="cart-badge">{{ cart_count }}</ion-badge>
+
+              
+              
+            </ion-buttons>
+          </ion-toolbar>
+    </ion-navbar>
+</ion-header>
+<ion-content class="padding">
+    <ion-slides class="slide" autoplay="2000" loop="false" speed="2000" pager >
+        <ion-slide (click)="goNext4()">
+          <img class="slideimage" src="http://phpstack-178083-797126.cloudwaysapps.com/web/slider/1234.jpg"
+         >
+         <div class="card-title3" align="center">CUSTOMIZE YOUR CHOICE</div>
+        </ion-slide>
+      <ion-slide (click)="goNext1()" >
+          <img class="slideimage" src="https://media1.popsugar-assets.com/files/thumbor/R2KH7NfTN571lZTXwpAzZ0bkXy8/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2016/01/07/764/n/1922564/5df130ce2ffb3f63_D_S_Spring_16_Group/i/Ralph-Lauren-Denim-Supply.jpg"
+          >
+          <div class="card-title1" align="center">Sale 50%</div>
+        </ion-slide >
+      
+        <ion-slide (click)="goNext2()">
+          <img class="slideimage" src="http://phpstack-178083-797126.cloudwaysapps.com/web/slider/12345.jpg"
+         >
+         <div class="card-title1" align="center">Buy 1 Get 1 Free</div>
+        </ion-slide>
+      </ion-slides>
+      <button class="button" ion-button full large (click)="goNext4()" color="purpledark">CUSTOMIZE  YOUR  PRODUCT</button>
+      <ion-row>
+        <ion-col col-4>
+          <img src="http://phpstack-178083-797126.cloudwaysapps.com/web/slider/a1.jpg" (click)="goNext4()"/>
+        </ion-col>
+        <ion-col col-4>
+          <img src="https://assets.myntassets.com/w_245,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2019/5/3/38b41c86-8a87-4ef2-966e-6c81ba638cb61556882568955-Just-in--1-.jpg" (click)="goNext1()"/>
+        </ion-col>
+        <ion-col col-4>
+          <img src="http://phpstack-178083-797126.cloudwaysapps.com/web/slider/a24.jpg" (click)="goNext4()"/>
+        </ion-col>
+      </ion-row>
+      
+      <div class="img">
+        <div (click)="goNext1()">
+          <img src="https://assets.myntassets.com/w_350,c_limit,fl_progressive,dpr_2.0/assets/images/retaillabs/2019/5/6/aff1d9be-44ff-4a45-8b2a-02f1d44c7c4f1557132074161-Women_Kazo-Faballey-Athena_DWPB_B6.jpg"/>
+          <div class="card-title" align="center">Look cool,Think cool</div>
+        </div> 
+      </div>  
+    
+</ion-content>
+ 

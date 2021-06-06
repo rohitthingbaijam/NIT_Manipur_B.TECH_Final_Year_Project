@@ -1,0 +1,47 @@
+<!--
+  Generated template for the WomencustomPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="purpledark">
+    <ion-toolbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu" ></ion-icon>
+        </button>
+        <ion-buttons start>
+          <button ion-button icon-only color="royal" >
+            <ion-icon name="search" ></ion-icon>
+          </button>
+        </ion-buttons>
+        <ion-title>Women Custom</ion-title>
+          <ion-buttons end>
+          <button ion-button icon-only color="royal" (click)="goMyCart()">
+            <ion-icon name="cart"></ion-icon>
+          </button>
+          <ion-badge class="cart-badge">{{ cart_count }}</ion-badge>
+        </ion-buttons>
+      </ion-toolbar>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="padding">
+    
+        <ion-card (click)="goNext2()">
+          <img 
+            src="https://static.standard.co.uk/s3fs-public/thumbnails/image/2018/02/27/11/tamara-rojo-landscape-2.jpg?w968"
+            style="width:400px;height:200px;"/>
+              <div class="card-title">Shirts</div>
+              <div class="card-subtitle"></div>
+        </ion-card>
+        <!--<div class="fits">Find your Fit</div>-->
+        <ion-card (click)="goNext3()">
+          <img  
+            src="https://hips.hearstapps.com/elleuk.cdnds.net/17/04/2560x1280/landscape-1485177451-lolakirke.jpg?resize=1200:*"
+            style="width:400px;height:200px;"/>
+              <div class="card-title">Blouse</div>
+              <div class="card-subtitle"></div>
+        </ion-card>
+     
+</ion-content>

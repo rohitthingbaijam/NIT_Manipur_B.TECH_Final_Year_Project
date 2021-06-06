@@ -1,0 +1,79 @@
+<!--
+  Generated template for the PaymentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="purpledark">
+    <ion-toolbar>  
+        <ion-title>Payment</ion-title>   
+      </ion-toolbar>
+  </ion-navbar> 
+</ion-header>
+
+<ion-content padding>
+  <!--<div class="address">Address: </div>
+  <ion-item class = "textarea">
+    <ion-textarea [(ngModel)]="_message" name="message"></ion-textarea>
+  </ion-item>
+  <div class="padding"></div>
+  <div class="border">Estimated delivery within 7-10 working days</div>
+  <div class="padding"></div>
+  <div class="address">Payment Options:</div>
+  <div class="padding"></div>-->
+  <div  *ngIf="!lastshow">
+  <ion-label>Shipping details</ion-label>
+  <ion-item>
+      <ion-input type="text"  [(ngModel)]="address" placeholder="Address"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input  [(ngModel)]="mobile"  placeholder="mobile"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-input  [(ngModel)]="pincode" placeholder="pincode"></ion-input>
+        </ion-item>
+      
+    
+
+    
+    <div class="padding"></div>
+    <button ion-button ion-button color="blue" type="submit" (click)="adddeliveryaddress()">Submit</button>
+    <div class="padding"></div>
+  </div>
+  <div *ngIf="lastshow">
+    <hr>
+    <ion-card>
+      <h3>Shiiping details</h3>
+      <p>
+        <ion-item>
+          {{add1}}
+        </ion-item>
+        <ion-item>
+            {{pin1}}
+          </ion-item>
+          <ion-item>
+              {{phone1}}
+            </ion-item>
+      </p>
+    </ion-card>
+    <ion-list radio-group>
+        <ion-item>
+          <ion-label>Cash on Delivery</ion-label>
+          <ion-radio checked=false value="go"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>Debit/Credit Card</ion-label>
+          <ion-radio value="rust"></ion-radio>
+        </ion-item>
+    </ion-list>
+  <div class="padding"></div>
+  <div class="address">Item details:</div>
+
+  <button class="footer" ion-button full large color="dark" (click)="goNextthankyou()">Place order</button>
+  <hr class="hr"> 
+</div>
+</ion-content>
+
+

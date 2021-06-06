@@ -1,0 +1,34 @@
+page-womencustom {
+    .padding {
+
+        ion-card {
+          position: relative;
+          text-align: center;
+        }
+        
+        .card-title {
+          border-style: groove;
+          border-color: rgba(0,0, 0, 0.3);
+          background : rgba(0,0, 0, 0.3);
+          position: absolute;
+          top: 76%;
+          font-size: 2.0em;
+          width: 100%;
+          font-weight: bold;
+          color: #fff;
+        }
+        
+        
+        .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 52%;
+          width: 100%;
+          color: #fff;
+        }
+    }
+
+    .bgarv{
+        background-color: rgb(37, 37, 37);
+    }
+}

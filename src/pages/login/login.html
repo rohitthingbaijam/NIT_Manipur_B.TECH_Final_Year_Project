@@ -1,0 +1,14 @@
+<ion-content class="bg">
+    <img class="hi" src="../../assets/imgs/Captures1.png" pager style="width:200px;height:85px;">
+    <ion-input  class="a" required placeholder="Username"  [(ngModel)]="username" ></ion-input>
+    <ion-input class="a1" required type="password"  placeholder="Password"  [(ngModel)]="password" ></ion-input>
+    <button ion-button class="a2" (click)="login()" block><b>Login</b></button>
+    <div class="a3">
+    <p>Forgot your Login details?<b>Click Here</b></p>
+    </div>
+    <div class="a4">
+    <b (click)="goNext2()">Signup Here</b>
+    </div>
+    
+
+</ion-content>
